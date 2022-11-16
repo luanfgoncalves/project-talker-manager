@@ -19,6 +19,6 @@ const userValidation = (req, res, next) => {
         return res.status(B_REQ).json({ message: 'O "password" deve ter pelo menos 6 caracteres' });
     }
     next();
-}
+};
 
 module.exports = userValidation;
