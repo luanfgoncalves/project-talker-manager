@@ -1,11 +1,13 @@
-function emailValidation(req, res, next) {
+// 4 - Adicione as validações para o endpoint /login 
+
+const userValidation = (req, res, next) => {
     const { email, password } = req.body;
-    const regex = /^\w+@[a-z]+\.[a-z]+$/;
+    const REGEX = /^\w+@[a-z]+\.[a-z]+$/;
     const B_REQ = 400;
     if (!email) {
         return res.status(B_REQ).json({ message: 'O campo "email" é obrigatório' });
     }
-    if (!regex.test(email)) {
+    if (!REGEX.test(email)) {
         return res.status(B_REQ).json(
             { message: 'O "email" deve ter o formato "email@email.com"' },
         );
@@ -19,4 +21,4 @@ function emailValidation(req, res, next) {
     next();
 }
 
-module.exports = emailValidation;
+module.exports = userValidation;

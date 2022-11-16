@@ -34,11 +34,11 @@ HTTP status:
 
 // ---- Requisições por requisito ----
 
-// 1 - Crie o endpoint GET /talker
-// 2 - Crie o endpoint GET /talker/:id
-// 3 - Crie o endpoint POST /login
-// 4 - Adicione as validações para o endpoint /login
-// 5 - Crie o endpoint POST /talker
+// 1 - Crie o endpoint GET /talker ok
+// 2 - Crie o endpoint GET /talker/:id ok
+// 3 - Crie o endpoint POST /login ok
+// 4 - Adicione as validações para o endpoint /login ok
+// 5 - Crie o endpoint POST /talker ok
 // 6 - Crie o endpoint PUT /talker/:id
 // 7 - Crie o endpoint DELETE /talker/:id
 // 8 - Crie o endpoint GET /talker/search?q=searchTerm
